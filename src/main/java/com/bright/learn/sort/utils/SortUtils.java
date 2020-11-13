@@ -40,14 +40,25 @@ public class SortUtils {
 
     }
 
-    public static void kuaipai(int[] nums){
-
+    public static void xuanze(int[] nums){
+        int length = nums.length;
+        for(int j=0; j<length ; j++) {
+            int minIndex = j;
+            for(int i=j; i<length; i++){
+                if(nums[i]<nums[minIndex]){
+                    minIndex = i;
+                }
+            }
+            int temp = nums[j];
+            nums[j] = nums[minIndex];
+            nums[minIndex] = temp;
+        }
     }
     public static void main(String[] args) {
-//        int[] nums = {6,4,5,3,1,3};
+        int[] nums = {6,4,5,3,1,3};
 //        int[] nums = {1,2,3,4,5,6};
-        int[] nums = {6,5,4,3,2,1};
-        charu(nums);
+//        int[] nums = {6,5,4,3,2,1};
+        xuanze(nums);
         for (int i: nums) {
             System.out.println(i);
         }
