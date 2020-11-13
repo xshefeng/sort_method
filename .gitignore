@@ -33,6 +33,5 @@ build/
 .vscode/
 
 /.idea/
-mvnw
-mvnw.cmd
+mvn*
 
