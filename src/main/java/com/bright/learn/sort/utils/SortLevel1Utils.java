@@ -1,6 +1,6 @@
 package com.bright.learn.sort.utils;
 
-public class SortUtils {
+public class SortLevel1Utils {
 
     public static void maoPao(int[] nums){
 
@@ -54,6 +54,7 @@ public class SortUtils {
             nums[minIndex] = temp;
         }
     }
+
     public static void main(String[] args) {
         int[] nums = {6,4,5,3,1,3};
 //        int[] nums = {1,2,3,4,5,6};
