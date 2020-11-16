@@ -1,6 +1,6 @@
 package com.bright.learn.sort.utils;
 
-public class SortLevel2Utils {
+public class GuiBingUtils {
 
 
     public static int[]  guibing(int[] nums, int length){
